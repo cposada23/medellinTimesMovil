@@ -1,0 +1,32 @@
+<!--
+  Generated template for the EditarNoticiaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar colo="primary">
+    <ion-title>Editar Noticia</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="crearNoticia()" [formGroup]="form">
+    <ion-item>
+      <ion-label>Titulo</ion-label>
+      <ion-input type="text" formControlName="titulo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Descripción</ion-label>
+      <ion-input type="text" formControlName="descripcion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Texto</ion-label>
+      <ion-input type="text" formControlName="texto"></ion-input>
+    </ion-item>
+    <button ion-button full type="submit" [disabled]="!form.valid">Guardar</button>
+  </form>
+</ion-content>

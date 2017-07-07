@@ -1,0 +1,35 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>detalle noticia</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="game-image">
+      <img [src] = "noticia?.image" alt="" class="tinted">
+    </div>
+  <ion-card padding>
+    <ion-card-title>
+      <h1>{{noticia?.titulo}}</h1>
+    </ion-card-title>
+      <p>{{noticia?.texto}}</p>
+      <ion-row no-padding>
+        <ion-col>
+          <button ion-button clear small color="primary" (click)="editar(noticia)" icon-start>
+            <ion-icon name="construct"></ion-icon>
+            Editar
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button clear small color="danger" (click)="eliminar(noticia)" icon-start>
+            <ion-icon name="trash"></ion-icon>
+            Eliminar
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+</ion-content>

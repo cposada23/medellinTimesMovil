@@ -1,14 +1,29 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="fondo">
+
+  <ion-card>
+    <ion-card-title text-center>
+      MEDELLÍN TIMES
+    </ion-card-title>
+    <ion-card-content>
+      <ion-item>
+        <button ion-button full color="dark" (click)="ingresar()">Ingresar</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon name="contact"></ion-icon>
+        </ion-avatar>
+        <h2>Aplicación hecha por:</h2>
+        <p><a href="https://github.com/cposada23">Camilo Posada Angel</a></p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon name="ionic"></ion-icon>
+        </ion-avatar>
+        <h2>Framework:</h2>
+        <p>Ionic 2</p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

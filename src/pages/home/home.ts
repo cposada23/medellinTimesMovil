@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  ingresar() {
+    this.navCtrl.push('Tabs');
+  }
+
 }
